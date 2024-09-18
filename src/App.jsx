@@ -18,7 +18,7 @@ const App = () => {
   return (
 
     <>
-  <BrowserRouter>
+  <HashRouter>
 
   <Navbar/>
     <Routes>
@@ -29,7 +29,7 @@ const App = () => {
       <Route path="/contact" element={<Contact/>} />
     </Routes>
     <Footer/>
-    </BrowserRouter>
+    </HashRouter>
     </>
   )
 }
