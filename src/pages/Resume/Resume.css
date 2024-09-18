@@ -1,0 +1,133 @@
+/* General Styles */
+.head-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1140px;
+    height: auto;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.head-container-extra {
+    margin-block: 33px;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Education Section */
+.left-section,
+.right-section {
+    width: 50%;
+}
+
+.year {
+    display: flex;
+    flex-direction: column;
+    text-wrap: nowrap;
+}
+
+.clg-description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.more {
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+}
+
+/* Skills Section */
+.ind-skills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .head-container-extra {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .year,
+    .clg-description {
+        align-items: center;
+        text-align: center;
+    }
+
+    .headline-content {
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .head-container {
+        padding: 20px;
+    }
+
+    .head-container-extra {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+    }
+
+    .year,
+    .clg-description {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .more {
+        gap: 30px;
+    }
+
+    .headline-content {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .head-container {
+        padding: 15px;
+    }
+
+    .headline-content h1 {
+        font-size: 24px;
+    }
+
+    .special {
+        font-size: 16px;
+    }
+
+    .year,
+    .clg-description {
+        text-align: center;
+        gap: 15px;
+    }
+
+    .more {
+        gap: 20px;
+    }
+    .ind-skills {
+        flex-direction: column;
+    }
+}
+

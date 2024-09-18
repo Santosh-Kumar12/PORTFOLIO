@@ -1,0 +1,24 @@
+.headline-content {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    align-items: flex-start;
+    margin-bottom: 84px;
+}
+.special{
+    font-size: 19px;
+    font-family:'Montserrat', sans-serif;
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 768px) {
+    .headline-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .headline-content h1,
+    .headline-content .special {
+        text-align: center;
+    }
+}

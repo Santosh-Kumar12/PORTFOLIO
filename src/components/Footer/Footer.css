@@ -1,0 +1,86 @@
+.footer-container {
+    margin-block: 129px;
+    padding: 0 20px;
+    background-color: #f4f4f4; /* Optional: Add a background color for visual separation */
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Ensure items wrap if needed */
+    gap: 32px; /* Adjust gap as needed */
+  }
+  
+  .footer-sub-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .footer-sub-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px; /* Default font size */
+  }
+  
+  .footer-sub-links a:hover {
+    color: #2a9192;
+  }
+  
+  .normal-heading {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1024px) {
+    .footer-links {
+      flex-direction: column;
+      gap: 24px;
+      align-items: flex-start; /* Align items to start for better visual balance */
+    }
+  
+    .footer-sub-links a {
+      font-size: 14px; /* Adjust font size for medium screens */
+    }
+  
+    .normal-heading {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-links {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .footer-sub-links a {
+      font-size: 16px;
+    }
+  
+    .normal-heading {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-container {
+      padding: 0 10px; /* Reduce padding on very small screens */
+    }
+  
+    .footer-links {
+      gap: 16px;
+    }
+  
+    .footer-sub-links a {
+      font-size: 14px; /* Further reduce font size for very small screens */
+    }
+  
+    .normal-heading {
+      font-size: 16px;
+    }
+  }
+  
